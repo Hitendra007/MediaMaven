@@ -1,33 +1,63 @@
-# Installation
+# Media Maven App
+
+The **Media Maven App** is a user-friendly web application built using Python, Streamlit, HTML, and JavaScript. This app leverages the power of the TMDB (The Movie Database) API to provide movie recommendations similar to a particular movie.
+
+## Installation
+
 To run the Media Maven App locally, follow these steps:
-Clone this repository: 
-1.Install the required Python packages: **pip install -r requirements.txt**
-2.Obtain a TMDB API key by signing up on the TMDB website.And put that api key inside links in details and index.html and in app.py **{your api key}**.
-3.Run movies recommendation .ipynb code segments it will generate a **similarity.pkl**
-4.Run the app: **streamlit run app.py**
 
+1. **Clone this repository:**
+    ```
+    git clone https://github.com/Hitendra007/Media-Maven.git
+    ```
+   
+2. **Install the required Python packages:**
+    ```
+    pip install -r requirements.txt
+    ```
+   
+3. **Obtain a TMDB API Key:**
+    - Sign up on the [TMDB website](https://www.themoviedb.org/) to get your API key.
+    - Put your TMDB API key inside links in `details.html`, `index.html`, and `app.py` where `{your_api_key}` appears.
 
-# MediaMaven
-The Media Maven App is a user-friendly web application built using Python, Streamlit, HTML, and JavaScript. This app leverages the power of the TMDB (The Movie Database) API to provide movie recommendations similar to a particular movie. 
+4. **Generate Similarity Data:**
+    - Run the code segments in the `movies_recommendation.ipynb` notebook to generate a file named `similarity.pkl`.
 
-# Features
-**Search**: Enter the title of a movie you enjoyed, and the app will retrieve relevant information about that movie.
+5. **Run the App:**
+    ```
+    streamlit run app.py
+    ```
 
-**Recommendations** : Based on the selected movie, the app queries the TMDB API to find similar movies, taking into consideration various attributes such as genre, cast, and plot.
+Visit `http://localhost:8501` in your web browser to use the Media Maven App locally.
 
-**Details**: View detailed information about each recommended movie, including its title, release date, synopsis, cast, and more.
+## Features
 
-**Watchlist:** Create a watchlist of movies you're interested in watching later. You can easily add and remove movies from your watchlist.
+- **Search:** Enter the title of a movie you enjoyed, and the app will retrieve relevant information about that movie.
 
-**Responsive Design:** The app is designed to be responsive and user-friendly on both desktop and mobile devices.
+- **Recommendations:** Based on the selected movie, the app queries the TMDB API to find similar movies, taking into consideration various attributes such as genre, cast, and plot.
 
-# Technologies Used
-**Python:** The backend of the app is built using Python, including the logic for querying the TMDB API and generating recommendations.
+- **Details:** View detailed information about each recommended movie, including its title, release date, synopsis, cast, and more.
 
-**Streamlit:** The user interface is created using Streamlit, a Python library for building interactive web applications.
+- **Watchlist:** Create a watchlist of movies you're interested in watching later. You can easily add and remove movies from your watchlist.
 
-**HTML and JavaScript:** HTML and JavaScript are used to enhance the user interface and provide additional interactivity.
+- **Responsive Design:** The app is designed to be responsive and user-friendly on both desktop and mobile devices.
 
-**TMDB API:** The app utilizes the TMDB API to retrieve movie information and recommendations. The API provides data about movies, including details like cast, genres, and more.
+## Technologies Used
 
-If you have any questions, suggestions, or issues, please feel free to contact me hitendra369432@gmail.com
+- **Python:** The backend of the app is built using Python, including the logic for querying the TMDB API and generating recommendations.
+
+- **Streamlit:** The user interface is created using Streamlit, a Python library for building interactive web applications.
+
+- **HTML and JavaScript:** HTML and JavaScript are used to enhance the user interface and provide additional interactivity.
+
+- **TMDB API:** The app utilizes the TMDB API to retrieve movie information and recommendations. The API provides data about movies, including details like cast, genres, and more.
+
+## Contact
+
+If you have any questions, suggestions, or issues, please feel free to contact me at hitendra369432@gmail.com.
+
+---
+
+Enjoy discovering new movies with the Media Maven App!
+
+*Disclaimer: The Media Maven App is a project developed for educational and personal purposes and is not affiliated with TMDB or any movie production company.*
