@@ -16,13 +16,13 @@ selected_movie_name = st.selectbox('Choose movie', movie_list)
 
 # Function to fetch the poster image URL for a given movie ID
 def fetchposter(movie_id):
-    response = requests.get('https://api.themoviedb.org/3/movie/{}?api_key=3cde0488e44af00750693cb1882aa652'.format(movie_id))
+    response = requests.get('https://api.themoviedb.org/3/movie/{}?api_key={your api key}'.format(movie_id))
     data = response.json()
     return "https://image.tmdb.org/t/p/w500/" + data['poster_path']
 
 # Function to fetch the homepage URL for a given movie ID
 def fetchhomepage(movie_id):
-    response = requests.get('https://api.themoviedb.org/3/movie/{}?api_key=3cde0488e44af00750693cb1882aa652'.format(movie_id))
+    response = requests.get('https://api.themoviedb.org/3/movie/{}?api_key={your api key}'.format(movie_id))
     data = response.json()
     return data["homepage"]
 
