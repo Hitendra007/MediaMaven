@@ -1,3 +1,7 @@
+# Demo
+
+https://github.com/Hitendra007/MediaMaven/assets/83388898/d6eebb70-c01d-41b0-b1ca-f20463274bf0
+
 # Media Maven App
 
 The **Media Maven App** is a user-friendly web application built using Python, Streamlit, HTML, and JavaScript. This app leverages the power of the TMDB (The Movie Database) API to provide movie recommendations similar to a particular movie.
